@@ -1,0 +1,5 @@
+1571726869：
+数据文件：C:\Users\Administrator\Desktop\重要课题设计文件\data\源数据 （四类）
+参数设置：batch_size=32,epoch=30
+
+

@@ -1,0 +1,27 @@
+进入项目
+python3
+pip3 install -r requirements.txt 安装相应的包
+
+如果缺什么包的，直接pip install + 包名 安装
+
+如何python api.py 启动web 接口。
+
+    var data= {
+        data: JSON.stringify({
+            'text': "特朗普和美国州长电话会议录音 怒斥各州州长",
+        }),
+    }
+    $.ajax({
+    url:'http://localhost:5000/',
+    type:'POST',
+    data:data,
+    dataType: 'json',
+    success:function(res){
+        console.log(res)
+        console.log(0)
+
+    },
+    error:function (res) {
+        console.log(res);
+        console.log(1)
+    }

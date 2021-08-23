@@ -1,0 +1,29 @@
+activate tensorflow
+训练：
+python main.py --mode=train
+
+
+
+测试：（若不设置 --demo_model 则默认寻找现有模型）
+python main.py --mode=test --demo_model=1571752775
+
+正确率评价指标，accuracy = （TP+TN）/(P+N)
+精度是精确性的度量，precision=TP/（TP+FP）
+召回率是覆盖面的度量，recall=TP/(TP+FN)=TP/P
+Fb-score是准确率和召回率的调和平均：Fb=[(1+b2)*P*R]/（b2*P+R），常用F1。
+
+processed 286051 tokens with 9977 phrases; found: 9760 phrases; correct: 9090.
+accuracy:  99.02%; precision:  93.14%; recall:  91.11%; FB1:  92.11
+EQU: precision:  98.66%; recall:  98.32%; FB1:  98.49  2022
+LOC: precision:  94.84%; recall:  91.82%; FB1:  93.30  3738
+ORG: precision:  88.88%; recall:  89.47%; FB1:  89.18  1970
+PER: precision:  88.62%; recall:  84.46%; FB1:  86.49  2030
+
+
+
+
+单句输入测试：（若不设置 --demo_model 则默认寻找现有模型）
+python main.py --mode=demo --demo_model=1571752775
+
+测试语句:
+特朗普上台后,不断强化美台实质关系,蔡英文当局向美国的"印太战略"积极靠拢.
