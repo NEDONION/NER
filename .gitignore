@@ -8,3 +8,7 @@ venv
 */node_modules
 **/node_modules
 **/.__pycache__
+.vscode/
+**/venv/
+**/.venv/
+**/__pycache__
