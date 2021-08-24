@@ -27,8 +27,7 @@
 
 页面效果如下：
 
-<img src="screen/jietu.png" alt="实体抽取" width="80%">
-
+![实体抽取](screen/jietu.png)
 
 ### 说明
 
